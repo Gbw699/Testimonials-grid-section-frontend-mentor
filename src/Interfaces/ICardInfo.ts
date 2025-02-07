@@ -3,5 +3,10 @@ export interface ICardInfo {
   name: string;
   shortTestimony: string;
   largeTestimony: string;
-  color: string
+  color: Color;
+}
+
+interface Color {
+  color: string;
+  backgroundColor: string;
 }
