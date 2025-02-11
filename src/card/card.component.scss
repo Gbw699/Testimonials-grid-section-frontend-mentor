@@ -1,0 +1,21 @@
+.container {
+  padding: 3rem;
+  margin: 2rem;
+  border: 1px black solid;
+  p {
+    margin: 0;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .img-container {
+      height: fit-content;
+      img {
+        border-radius: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

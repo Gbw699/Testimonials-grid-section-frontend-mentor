@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, InputSignal, Signal } from '@angular/core';
 import { ICardInfo } from '../Interfaces/ICardInfo';
 
 @Component({
@@ -9,5 +9,5 @@ import { ICardInfo } from '../Interfaces/ICardInfo';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
-  cardInfo = input<ICardInfo>();
+  cardInfo: InputSignal<ICardInfo | undefined> = input<ICardInfo>();
 }

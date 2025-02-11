@@ -1,8 +1,19 @@
-<article class="container">
-  <div class="img-container">
-    <img
-      src="{{ cardInfo()?.profileImg }}"
-      alt="Alt profile image of the testimony person"
-    />
-  </div>
+@let color = cardInfo()?.color?.color; @let backgroundColor =
+cardInfo()?.color?.backgroundColor;
+
+<article class="container" style="color: {{color}}; background-color: {{ backgroundColor }};">
+  <header>
+    <div class="img-container">
+      <img
+        src="{{ cardInfo()?.profileImg }}"
+        alt="Alt profile image of the testimony person"
+      />
+    </div>
+    <div class="name-container">
+      <p class="name">{{ cardInfo()?.name }}</p>
+      <p class="role">Verified Graduate</p>
+    </div>
+  </header>
+  <p class="short-testimony">{{ cardInfo()?.shortTestimony }}</p>
+  <p class="large-testimony">" {{ cardInfo()?.largeTestimony }} "</p>
 </article>
