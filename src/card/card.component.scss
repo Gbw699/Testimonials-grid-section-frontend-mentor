@@ -1,14 +1,16 @@
 @use "../styles.scss" as s;
 
 .container {
-  padding: 2.8rem;
+  padding: 1.7rem 2.3rem;
   margin: 2rem;
   border-radius: 10px;
-  // background-image: url(/images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: right 1.5rem top 0;
-  background-size: 110px;
-
+  background-position: right 2rem top 0;
+  background-size: 100px;
+  @media (min-width: 900px) {
+    margin: 0;
+    height: 100%;
+  }
   header {
     display: flex;
     align-items: center;
@@ -16,7 +18,7 @@
 
     .img-container {
       height: fit-content;
-      width: 35px;
+      width: 30px;
 
       img {
         border: 2px solid rgba($color: s.$LightGrayishBlue, $alpha: 0.5);
@@ -30,18 +32,24 @@
       p {
         margin: 0;
       }
+      .name {
+        letter-spacing: 0.2px;
+      }
+      .role {
+        font-size: 11.5px;
+      }
     }
   }
 
   .short-testimony {
     margin-top: 1rem;
-    font-size: 20.7px;
+    font-size: 19px;
     font-weight: 600;
+    letter-spacing: 0.45px;
   }
 
-.large-testimony{
-  // padding-right: 1.8rem;
-  line-height: 20px;
-  // letter-spacing: 0.4px;
-}
+  .large-testimony {
+    letter-spacing: 0.3px;
+    line-height: 20px;
+  }
 }

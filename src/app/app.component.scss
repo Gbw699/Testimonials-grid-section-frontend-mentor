@@ -1,0 +1,22 @@
+.container {
+  @media (min-width: 900px) {
+    max-width: 85%;
+    max-height: 85%;
+    display: grid;
+    // gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+
+    // align-items: fit-content;
+    app-card:first-child {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    app-card:last-child {
+      grid-area: 1 / 4 / 3 / 5;
+    }
+    .fourth-child {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+  }
+}
