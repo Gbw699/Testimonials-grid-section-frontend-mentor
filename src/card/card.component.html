@@ -1,7 +1,16 @@
 @let color = cardInfo()?.color?.color; @let backgroundColor =
 cardInfo()?.color?.backgroundColor;
 
-<article class="container" style="color: {{color}}; background-color: {{ backgroundColor }};">
+<article
+  class="container"
+  [style.color]="color"
+  [style.background-color]="backgroundColor"
+  [style.background-image]="
+    backgroundColor === 'hsl(263, 55%, 52%)'
+      ? 'url(./images/bg-pattern-quotation.svg)'
+      : ''
+  "
+>
   <header>
     <div class="img-container">
       <img
@@ -11,9 +20,11 @@ cardInfo()?.color?.backgroundColor;
     </div>
     <div class="name-container">
       <p class="name">{{ cardInfo()?.name }}</p>
-      <p class="role">Verified Graduate</p>
+      <p class="role" [style.opacity]="0.5">Verified Graduate</p>
     </div>
   </header>
   <p class="short-testimony">{{ cardInfo()?.shortTestimony }}</p>
-  <p class="large-testimony">" {{ cardInfo()?.largeTestimony }} "</p>
+  <p class="large-testimony" [style.opacity]="0.7">
+    " {{ cardInfo()?.largeTestimony }} "
+  </p>
 </article>

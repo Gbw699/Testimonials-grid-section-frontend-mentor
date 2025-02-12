@@ -1,21 +1,47 @@
+@use "../styles.scss" as s;
+
 .container {
-  padding: 3rem;
+  padding: 2.8rem;
   margin: 2rem;
-  border: 1px black solid;
-  p {
-    margin: 0;
-  }
+  border-radius: 10px;
+  // background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 1.5rem top 0;
+  background-size: 110px;
+
   header {
     display: flex;
     align-items: center;
     gap: 2rem;
+
     .img-container {
       height: fit-content;
+      width: 35px;
+
       img {
+        border: 2px solid rgba($color: s.$LightGrayishBlue, $alpha: 0.5);
         border-radius: 100%;
         max-width: 100%;
         height: auto;
       }
     }
+
+    .name-container {
+      p {
+        margin: 0;
+      }
+    }
   }
+
+  .short-testimony {
+    margin-top: 1rem;
+    font-size: 20.7px;
+    font-weight: 600;
+  }
+
+.large-testimony{
+  // padding-right: 1.8rem;
+  line-height: 20px;
+  // letter-spacing: 0.4px;
+}
 }
