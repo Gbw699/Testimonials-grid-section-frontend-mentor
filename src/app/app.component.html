@@ -4,7 +4,7 @@ $VeryDarkBlackishBlue= "hsl(219, 29%, 14%)"; @let $LightGrayishBlue =
 "hsl(210,46%,95%)";
 
 <main class="container">
-  <app-card
+  <app-card class="first-child grid-col-span-2"
     [cardInfo]="{
       profileImg: './images/image-daniel.jpg',
       name: 'Daniel Clifford',
@@ -15,7 +15,7 @@ $VeryDarkBlackishBlue= "hsl(219, 29%, 14%)"; @let $LightGrayishBlue =
       color: { color: $LightGrayishBlue, backgroundColor: $ModerateViolet }
     }"
   ></app-card>
-  <app-card
+  <app-card class="second-child"
     [cardInfo]="{
       profileImg: './images/image-jonathan.jpg',
       name: 'Jonathan Walters',
@@ -25,7 +25,7 @@ $VeryDarkBlackishBlue= "hsl(219, 29%, 14%)"; @let $LightGrayishBlue =
       color: { color: $LightGrayishBlue, backgroundColor: $VeryDarkGrayishBlue }
     }"
   ></app-card>
-  <app-card
+  <app-card class="third-child"
     [cardInfo]="{
       profileImg: './images/image-jeanette.jpg',
       name: 'Jeanette Harmon',
@@ -36,7 +36,7 @@ $VeryDarkBlackishBlue= "hsl(219, 29%, 14%)"; @let $LightGrayishBlue =
     }"
   ></app-card>
   <app-card
-    class="fourth-child"
+    class="fourth-child grid-col-span-2"
     [cardInfo]="{
       profileImg: './images/image-patrick.jpg',
       name: 'Patrick Abrams',
@@ -50,7 +50,7 @@ $VeryDarkBlackishBlue= "hsl(219, 29%, 14%)"; @let $LightGrayishBlue =
       }
     }"
   ></app-card>
-  <app-card
+  <app-card class="fifth-child"
     [cardInfo]="{
       profileImg: './images/image-kira.jpg',
       name: 'Kira Whittle',

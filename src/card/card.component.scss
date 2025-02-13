@@ -1,15 +1,14 @@
 @use "../styles.scss" as s;
 
 .container {
-  padding: 1.7rem 2.3rem;
-  margin: 2rem;
+  // padding: 1.7rem 2.3rem;
+  padding: 1.15rem 2.3rem;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-position: right 2rem top 0;
   background-size: 100px;
-  @media (min-width: 900px) {
-    margin: 0;
-    height: 100%;
+  @media (min-width: 1200px) {
+    background-position: right 6rem top 0;
   }
   header {
     display: flex;
@@ -43,13 +42,13 @@
 
   .short-testimony {
     margin-top: 1rem;
-    font-size: 19px;
+    font-size: clamp(19px, 3vw, 22px);
     font-weight: 600;
     letter-spacing: 0.45px;
   }
 
   .large-testimony {
-    letter-spacing: 0.3px;
-    line-height: 20px;
+    letter-spacing: 0.4px;
+    line-height: 19px;
   }
 }
