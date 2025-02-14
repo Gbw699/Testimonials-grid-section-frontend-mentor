@@ -1,4 +1,5 @@
-import { Component, input, InputSignal, Signal } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
+
 import { ICardInfo } from '../Interfaces/ICardInfo';
 
 @Component({
